@@ -8,7 +8,7 @@
 private function notificarIos($mensaje,$id_dispositivo){
 	$ctx = stream_context_create();
 	stream_context_set_option($ctx, 'ssl', 'local_cert', app_path().'/libs/pem/ckp.pem');
-	stream_context_set_option($ctx, 'ssl', 'passphrase', 'yak6gedy');
+	stream_context_set_option($ctx, 'ssl', 'passphrase', 'CLAVE');
 
 	// Open a connection to the APNS server
 	$fp = stream_socket_client(
